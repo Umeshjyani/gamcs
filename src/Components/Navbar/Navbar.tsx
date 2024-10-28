@@ -64,7 +64,7 @@ const navItems: NavItem[] = [
     },
 ]
 
-export default function Navbar({ isScrolled }: any) {
+export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
     const [isSideMenuOpen, setSideMenu] = useState(false)
     function openSideMenu() {
         setSideMenu(true)
@@ -231,7 +231,7 @@ function SingleNavItem({ label, children }: NavItem) {
 //                 label: "Blog",
 //                 link: "#",
 //             },
-//         ], 
+//         ],
 //     },
 //     {
 //         label: "BLOG",
@@ -268,7 +268,7 @@ function SingleNavItem({ label, children }: NavItem) {
 //     const handleScroll = () => {
 //         if (typeof window !== "undefined") {
 //             setIsSticky(window.scrollY > 50);
-//         }    
+//         }
 //     };
 
 //     useEffect(() => {
