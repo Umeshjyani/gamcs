@@ -18,7 +18,7 @@ export default function Fewwords() {
                 </div>
                 <div className="w-full md:w-1/2 order-2 md:order-1 mb-6 md:mb-0">
                     <Image
-                        src="/image10.jpg"
+                        src="/image10.JPG"
                         alt="Team meeting"
                         width={600}
                         height={400}
