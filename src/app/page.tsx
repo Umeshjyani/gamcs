@@ -6,8 +6,9 @@ export default function page() {
       <div>
         <Slider />
         <div className="h-52">
-
+          
         </div>
+        
       </div>
     </>
   );

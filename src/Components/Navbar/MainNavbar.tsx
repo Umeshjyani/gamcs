@@ -1,8 +1,19 @@
-import React from 'react'
+"use client";
+
+import React, { useEffect, useState } from 'react'
 import { MdLocationPin, MdLocalPhone } from "react-icons/md";
 import Navbar from './Navbar';
 
 const MainNavbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     return (
         <div>
             <div className='hidden md:flex justify-between items-center m-auto pt-[30px] pb-[40px] mx-10'>
@@ -44,7 +55,7 @@ const MainNavbar = () => {
                     </button>
                 </div>
             </div>
-            <Navbar /> 
+            <Navbar isScrolled={isScrolled}/>
         </div>
     )
 }
