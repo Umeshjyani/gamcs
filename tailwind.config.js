@@ -5,17 +5,6 @@ module.exports = {
     ],
     theme: {
         extend: {
-            // fontFamily: {
-            //     sans: [
-            //         'Segoe UI',
-            //         'Segoe UI Web (West European)',
-            //         '-apple-system',
-            //         'BlinkMacSystemFont',
-            //         'Roboto',
-            //         'Helvetica Neue',
-            //         'sans-serif',
-            //     ],
-            // },
             colors: {
                 primary: '#0095D9',
                 primaryhover: '#00537b',
