@@ -16,6 +16,7 @@ module.exports = {
                 bordergray: '#e8e9ee',
                 backgroundwhite: '#ffffff',
                 backgroundgray: '#f5f6fa',
+                patticolor:'#12394b',
             },
         },
     },
